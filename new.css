@@ -1,0 +1,365 @@
+/* header content */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+body {
+  background-image: url('download\ \(5\).jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* backdrop-filter: blur(2rem); */
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index:10;
+  
+}
+
+.navbar {
+  height: 70px;
+  /* background: linear-gradient(to right, rgb(212, 16, 16), black, black, black, rgb(199, 8, 8)); */
+  background: linear-gradient(to left, red, black, black, black, red);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-logo {
+  height: 65px;
+  width: 65px;
+}
+
+.logo {
+  height: 65px;
+  width: 65px;
+  background-image: url("Motorlogo.jpg");
+  background-size: cover;
+  border-radius: 100%;
+  border: 2px solid black;
+}
+
+.nav-info a {
+  padding-right: 40px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0s linear 0.3s;
+}
+
+.nav-info a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.nav-icons i {
+  font-size: 1.2rem;
+  color: white;
+  padding-right: 40px;
+}
+
+.aboutcontainer
+{
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-image: url("—Pngtree—motorcycle\ silhouette\ modern\ vehicle_6535469.png");
+  background-size:cover;*/
+} 
+.panel-img {
+  height: 200px;
+  width: 20%;
+  float: right;
+  background-image: url("motorcycle-png.png");
+  background-size: cover;
+  backdrop-filter: blur(1.5rem);
+  background-position: right;/* This aligns the background image to the right */
+  /* position:sticky;
+  top:70px; */
+  
+}
+.overlay{
+  height:100%;
+  width:100%;
+  background-color:rgba(255,255,255,0.9);
+}
+
+
+/* .heading-title
+{
+  padding-top: 50px;
+  color: #09162A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+} */
+/* .tit
+{
+  color: #494F5B;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+} */
+.sub-title{
+  align-self: center;
+  text-align: center;
+  margin:auto;
+  margin-right:25rem;
+}
+.grid-container {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin: 20px 0;
+  padding-left: 45px; */
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  height:700px;
+}
+.grid-container h3{
+  /* padding-right:5rem;
+  padding-top:5rem; */
+  font-size:1.6rem;
+  font-weight:900;
+  color:#fff;
+  text-shadow:3px 0px 15px #fff;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+img {
+  height:630px;
+  width:880px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+.content-grid {
+  /* background-color: #000000; */
+  height:620px;
+  width:630px;
+  text-align: justify;
+  font-size:1.1rem;
+  line-height: 26px;
+   padding-bottom: 15px;
+   /* padding-right: 45px; */
+}
+.containers {
+  display: flex; 
+  justify-content: space-between; 
+  background-color: #fff;
+  height: auto;
+}
+
+.mission, .vision {
+  height: 553.75px;
+  width: 390.61px; /* Adjust the width of each div as needed */
+  padding: 10px; /* Add padding for spacing within divs */
+  background-color: #746c6c; /* Background color for divs */
+  border: 1px solid #0a0909; /* Border for divs */
+  margin: 5px; /* Add margin for spacing between divs */
+}
+
+.mission h4, .vision h4 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #b93027; /* Header text color */
+}
+.mission,.vision{
+    flex: 1;
+    color: #fff;
+    text-align: justify;
+    width: 48%; 
+    height: 250px;
+    padding: 10px 20px; /* Add padding for spacing within divs (left and right) */
+    background-color: #000000; /* Background color for divs */
+    border: 1px solid #940b0b; /* Border for divs */
+    margin: 5px; /* Add margin for spacing between divs */
+  }
+  
+
+.mission p, .vision p {
+  font-size: 16px; /* Paragraph text font size */
+  line-height: 1.5; /* Line height for paragraph text */
+}
+.imageservice
+{
+  height: 30px;
+  width: 20px;
+}
+.icon-service
+{
+  
+  height: 600px;
+  padding-top: 20px;
+ 
+}
+.weserve
+{
+  
+  background-color:fff;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+}
+.icon-service
+{
+  /* background-color: #000; */
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.bajaj img
+{
+  height:200px;
+  width: 150px;
+  
+}
+.royalenfield img
+{
+  height: 200px;
+  width:150px;
+ 
+}
+.suzuki img
+{
+  height: 200px;
+  width: 150px;
+}
+.ktm img
+{
+  height: 200px;
+  width: 150px;
+}
+.honda img
+{
+  height: 200px;
+  width: 150px;
+}
+.mahindra img
+{
+  height: 200px;
+  width: 150px;
+}
+.jawa img
+{
+  height: 200px;
+  width: 150px;
+}
+.tvs img
+{
+  height: 200px;
+  width: 150px;
+}
+.footer {
+  height: 500px;
+  width: 100%;
+  /* background-color: rgb(6, 5, 23); */
+  background: linear-gradient(to left, red, black, black, black, red);
+  color: white;
+  display: flex;
+  padding-top: 3rem;
+  justify-content: space-around;
+}
+
+.footer-first-info {
+  height: 400px;
+  width: 400px;
+  /* display: flex; */
+  /* padding-left: 1rem; */
+}
+
+.footer-first-info p {
+  padding-top: 1rem;
+}
+
+.footer-first-info .footer-logo img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.About-us ul {
+  padding-top: 1rem;
+}
+
+.About-us li {
+  padding-top: 1rem;
+  list-style: none;
+}
+
+.About-us li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.our-services ul {
+  padding-top: 1rem;
+  padding-left: 4rem;
+}
+
+.our-services h1 {
+  padding-left: 3.7rem;
+}
+
+.our-services li {
+  padding-top: 1rem;
+  list-style: none;
+}
+
+.our-services li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+.Location {
+  display: flex;
+  padding-top: 0.5rem;
+}
+
+.Location .location-icon i {
+  padding-right: 2rem;
+  font-size: 1.5rem;
+}
+
+.Email {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.Email .email-icon i {
+  padding-right: 2rem;
+  font-size: 1.5rem;
+}
+
+.call-us {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.call-us .call-icon i {
+  padding-right: 2rem;
+  font-size: 1.5rem;
+}
+
+.Follow-us {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.Follow-us .follow-Us-icon i {
+  padding-right: 2rem;
+  font-size: 1.5rem;
+}
