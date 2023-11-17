@@ -1,16 +1,11 @@
-/* header content */
+/* Header Content */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
 }
-body {
-  background-image: url('download\ \(5\).jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* backdrop-filter: blur(2rem); */
-}
+
 
 header{
   position: sticky;
@@ -21,7 +16,6 @@ header{
 
 .navbar {
   height: 70px;
-  /* background: linear-gradient(to right, rgb(212, 16, 16), black, black, black, rgb(199, 8, 8)); */
   background: linear-gradient(to left, red, black, black, black, red);
   display: flex;
   align-items: center;
@@ -64,48 +58,34 @@ header{
 .aboutcontainer
 {
   height: 200px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-image: url("—Pngtree—motorcycle\ silhouette\ modern\ vehicle_6535469.png");
-  background-size:cover;*/
+
 } 
 .panel-img {
   height: 200px;
   width: 20%;
   float: right;
-  background-image: url("motorcycle-png.png");
-  background-size: cover;
-  backdrop-filter: blur(1.5rem);
-  background-position: right;/* This aligns the background image to the right */
-  /* position:sticky;
-  top:70px; */
   
 }
+.panel-img img{
+  height:100%;
+  width:100%;
+  backdrop-filter: blur(5rem);
+}
+  
 .overlay{
   height:100%;
   width:100%;
-  background-color:rgba(255,255,255,0.9);
+  position:relative;
+  top:-205px;
+  right:0;
+  background-color:rgba(255,255,255,0.95);
 }
 
 
-/* .heading-title
-{
-  padding-top: 50px;
-  color: #09162A;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-} */
-/* .tit
-{
-  color: #494F5B;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-} */
 .sub-title{
   align-self: center;
   text-align: center;
@@ -113,57 +93,57 @@ header{
   margin-right:25rem;
 }
 .grid-container {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
-  margin: 20px 0;
-  padding-left: 45px; */
+  
   display:flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height:700px;
 }
-.grid-container h3{
-  /* padding-right:5rem;
-  padding-top:5rem; */
+.vertical-info h2{
+ 
   font-size:1.6rem;
   font-weight:900;
-  color:#fff;
-  text-shadow:3px 0px 15px #fff;
+  color:#e40c0c;
+  text-shadow:3px 0px 15px #e40c0c;
   writing-mode: vertical-lr;
   text-orientation: upright;
 }
 
-img {
+.image-grid{
   height:630px;
   width:880px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
 }
-.content-grid {
-  /* background-color: #000000; */
+
+.image-grid img {
+  height:100%;
+  width:100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+
+}
+
+.content-grid{
   height:620px;
-  width:630px;
+  width:690px;
+
+  
+}
+.content-grid p{
+  height:100%;
+  width:100%;
   text-align: justify;
   font-size:1.1rem;
-  line-height: 26px;
-   padding-bottom: 15px;
-   /* padding-right: 45px; */
+  line-height:2rem;
+  color: #000000;
+}
+.box3{
+  width:95%;
+  margin:auto;
 }
 .containers {
   display: flex; 
   justify-content: space-between; 
-  background-color: #fff;
-  height: auto;
-}
+} 
 
-.mission, .vision {
-  height: 553.75px;
-  width: 390.61px; /* Adjust the width of each div as needed */
-  padding: 10px; /* Add padding for spacing within divs */
-  background-color: #746c6c; /* Background color for divs */
-  border: 1px solid #0a0909; /* Border for divs */
-  margin: 5px; /* Add margin for spacing between divs */
-}
 
 .mission h4, .vision h4 {
   align-items: center;
@@ -172,10 +152,12 @@ img {
   color: #b93027; /* Header text color */
 }
 .mission,.vision{
+  flex-wrap: wrap;
+  overflow: auto;
     flex: 1;
     color: #fff;
     text-align: justify;
-    width: 48%; 
+    width: 50%; 
     height: 250px;
     padding: 10px 20px; /* Add padding for spacing within divs (left and right) */
     background-color: #000000; /* Background color for divs */
@@ -188,32 +170,32 @@ img {
   font-size: 16px; /* Paragraph text font size */
   line-height: 1.5; /* Line height for paragraph text */
 }
+
 .imageservice
 {
   height: 30px;
   width: 20px;
 }
-.icon-service
-{
-  
-  height: 600px;
-  padding-top: 20px;
- 
-}
+
 .weserve
 {
-  
+  display: flex;
+  padding: 25px;
   background-color:fff;
-  color: #fff;
+  color: #000;
+  font-size:30px;
+  font-weight: 90px;
   text-align: center;
   justify-content: center;
 }
 .icon-service
 {
-  /* background-color: #000; */
+ 
   height: 300px;
   display: flex;
   justify-content: space-evenly;
+  
+
 }
 .bajaj img
 {
@@ -247,7 +229,7 @@ img {
   height: 200px;
   width: 150px;
 }
-.jawa img
+.hero img
 {
   height: 200px;
   width: 150px;
@@ -260,7 +242,7 @@ img {
 .footer {
   height: 500px;
   width: 100%;
-  /* background-color: rgb(6, 5, 23); */
+ 
   background: linear-gradient(to left, red, black, black, black, red);
   color: white;
   display: flex;
@@ -271,8 +253,7 @@ img {
 .footer-first-info {
   height: 400px;
   width: 400px;
-  /* display: flex; */
-  /* padding-left: 1rem; */
+
 }
 
 .footer-first-info p {
@@ -362,4 +343,153 @@ img {
 .Follow-us .follow-Us-icon i {
   padding-right: 2rem;
   font-size: 1.5rem;
+}
+/* @media only screen and (max-width: 768px) {
+  .aboutcontainer {
+      flex-direction: column;
+      height: auto;
+  }
+
+  .sub-title {
+      margin-right: 0;
+  }
+
+  .panel-img {
+      width: 100%;
+      float: none;
+  }
+
+  .overlay {
+      top: 0;
+  }
+} */
+
+@media (max-width:925px) {
+  .footer {
+      flex-wrap: wrap;
+  }
+
+  .footer-first-info {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      height: 150px;
+  }
+
+  .About-us {
+      border-bottom: 1px solid rgb(123, 118, 118);
+      height: 400px;
+      /* width: 100%; */
+      /* padding-left: 7.8rem; */
+      padding-top: 2rem;
+  }
+
+  .our-services {
+      padding-top: 2.5rem;
+      border-bottom: 1px solid rgb(123, 118, 118);
+      height: 300px;
+  }
+
+  .adress-bar {
+      padding-top: 2rem;
+  }
+}
+
+@media (min-width:100px) and (max-width:1193px) {
+  .mission-card {
+      width: 300px;
+      margin-left: 1rem;
+  }
+
+  .mission-card .overlay {
+      width: 100%;
+  }
+
+  .overlay-card h1 {
+      line-height: 2.5rem;
+  }
+
+  .overlay-card {
+      height: 80%;
+      width: 90%;
+      line-height: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 1768px) {
+  .grid-container {
+      flex-direction: column;
+      height: auto;
+  }
+
+  .vertical-info h2 {
+      writing-mode: horizontal-tb;
+      text-orientation: sideways;
+      text-align: center;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      text-shadow: none;
+  }
+
+  .image-grid {
+      width: 100%;
+      height: auto;
+  }
+
+  .image-grid img {
+      box-shadow: none;
+  }
+
+  .content-grid {
+      width: 100%;
+      height: auto;
+  }
+
+  .content-grid p {
+      text-align: left;
+      font-size: 1rem;
+      line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1768px) {
+  .containers {
+      flex-direction: column;
+  }
+
+  .mission, .vision {
+      width: 100%;
+      margin: 5px 0;
+      height: auto;
+  }
+
+  .mission p, .vision p {
+      font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1768px) {
+  .weserve {
+      flex-direction: column;
+      font-size: 24px;
+  }
+
+  .icon-service {
+      flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+  }
+
+  .bajaj img,
+  .royalenfield img,
+  .suzuki img,
+  .ktm img,
+  .honda img,
+  .mahindra img,
+  .hero img,
+  .tvs img {
+      height: 150px;
+      width: 120px;
+      justify-content: space-evenly;
+  }
 }
